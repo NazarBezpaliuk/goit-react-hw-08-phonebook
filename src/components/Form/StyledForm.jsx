@@ -22,6 +22,8 @@ export const StyledForm = styled.form`
         border: 1px solid red;
         outline: none;
         transition: box-shadow 300ms linear;
+        margin-bottom: 15px;
+        width: 100%;
         &:hover {
             box-shadow: 0px 0px 20px 5px red;
         }
