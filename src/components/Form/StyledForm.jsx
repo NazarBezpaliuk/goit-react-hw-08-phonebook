@@ -1,14 +1,12 @@
 import styled from 'styled-components';
 
 export const StyledForm = styled.form`
-    background-color: #f3f98c;
+    background-color: black;
     display: flex;
-    gap: 20px;
-    align-items: flex-end;
-    flex-basis: 33%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border: 2px solid #4eafd0;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid red;
     margin-bottom: 20px;
     border-radius: 5px;
     padding: 20px;
@@ -21,24 +19,23 @@ export const StyledForm = styled.form`
         height: 25px;
         padding: 5px;
         border-radius: 5px;
-        border: 1px solid #4eafd0;
+        border: 1px solid red;
         outline: none;
-        &:focus {
-            border: 1px solid #9a9483;
+        transition: box-shadow 300ms linear;
+        &:hover {
+            box-shadow: 0px 0px 20px 5px red;
         }
     }
     button {
         padding: 10px;
         border-radius: 5px;
-        border: 1px solid #4eafd0;
-        background-color: #81f9af;
-        color: #000602;
+        border: 1px solid red;
+        background-color: #252525;
+        color: #fff;
         cursor: pointer;
         transition: ease-in 200ms;
-        :hover {
-            border: 1px solid #e5dcc3;
-            background-color: #019633;
-            color: #fff;
+        &:hover {
+            background-color: #757474;
         }
     }
 `;
